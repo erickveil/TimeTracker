@@ -42,6 +42,8 @@ private slots:
 
     void on_pbRandNight_clicked();
 
+    void on_leHourName_returnPressed();
+
 private:
     Ui::MainWindow *ui;
 

@@ -145,6 +145,174 @@ void MainWindow::_setHourName()
      * 11 Night		6	7	7	8	8	9	9	8	8	7	7	6
      */
 
+    int month = ui->sbMonth->value();
+    int hour = ui->sbDayHour->value();
+
+    QList<QString> timeNames = {
+        "Null", "Midnight", "Moondark", "Nightend", "Dawn", "Morning",
+        "Highsun", "Afternoon", "Midday", "Evening", "Sunset", "Night"
+    };
+
+    QString name;
+
+    if (month == 1) {
+        if (hour == 0) { name = timeNames[1]; }
+        else if (hour < 9) { name = timeNames[2]; }
+        else if (hour < 10) { name = timeNames[3]; }
+        else if (hour < 11) { name = timeNames[4]; }
+        else if (hour < 12) { name = timeNames[5]; }
+        else if (hour < 13) { name = timeNames[6]; }
+        else if (hour < 14) { name = timeNames[7]; }
+        else if (hour < 16) { name = timeNames[8]; }
+        else if (hour < 17) { name = timeNames[9]; }
+        else if (hour < 18) { name = timeNames[10]; }
+        else { name = timeNames[11]; }
+    }
+    else if (month == 2) {
+        if (hour == 0) { name = timeNames[1]; }
+        else if (hour < 8) { name = timeNames[2]; }
+        else if (hour < 9) { name = timeNames[3]; }
+        else if (hour < 10) { name = timeNames[4]; }
+        else if (hour < 12) { name = timeNames[5]; }
+        else if (hour < 13) { name = timeNames[6]; }
+        else if (hour < 15) { name = timeNames[7]; }
+        else if (hour < 17) { name = timeNames[8]; }
+        else if (hour < 18) { name = timeNames[9]; }
+        else if (hour < 19) { name = timeNames[10]; }
+        else { name = timeNames[11]; }
+    }
+    else if (month == 3) {
+        if (hour == 0) { name = timeNames[1]; }
+        else if (hour < 8) { name = timeNames[2]; }
+        else if (hour < 9) { name = timeNames[3]; }
+        else if (hour < 10) { name = timeNames[4]; }
+        else if (hour < 12) { name = timeNames[5]; }
+        else if (hour < 13) { name = timeNames[6]; }
+        else if (hour < 15) { name = timeNames[7]; }
+        else if (hour < 17) { name = timeNames[8]; }
+        else if (hour < 18) { name = timeNames[9]; }
+        else if (hour < 19) { name = timeNames[10]; }
+        else { name = timeNames[11]; }
+    }
+    else if (month == 4) {
+        if (hour == 0) { name = timeNames[1]; }
+        else if (hour < 7) { name = timeNames[2]; }
+        else if (hour < 8) { name = timeNames[3]; }
+        else if (hour < 9) { name = timeNames[4]; }
+        else if (hour < 12) { name = timeNames[5]; }
+        else if (hour < 13) { name = timeNames[6]; }
+        else if (hour < 16) { name = timeNames[7]; }
+        else if (hour < 17) { name = timeNames[8]; }
+        else if (hour < 18) { name = timeNames[9]; }
+        else if (hour < 19) { name = timeNames[10]; }
+        else { name = timeNames[11]; }
+    }
+    else if (month == 5) {
+        if (hour == 0) { name = timeNames[1]; }
+        else if (hour < 7) { name = timeNames[2]; }
+        else if (hour < 8) { name = timeNames[3]; }
+        else if (hour < 9) { name = timeNames[4]; }
+        else if (hour < 12) { name = timeNames[5]; }
+        else if (hour < 13) { name = timeNames[6]; }
+        else if (hour < 16) { name = timeNames[7]; }
+        else if (hour < 17) { name = timeNames[8]; }
+        else if (hour < 18) { name = timeNames[9]; }
+        else if (hour < 19) { name = timeNames[10]; }
+        else { name = timeNames[11]; }
+    }
+    else if (month == 6) {
+        if (hour == 0) { name = timeNames[1]; }
+        else if (hour < 6) { name = timeNames[2]; }
+        else if (hour < 7) { name = timeNames[3]; }
+        else if (hour < 8) { name = timeNames[4]; }
+        else if (hour < 12) { name = timeNames[5]; }
+        else if (hour < 13) { name = timeNames[6]; }
+        else if (hour < 17) { name = timeNames[7]; }
+        else if (hour < 19) { name = timeNames[8]; }
+        else if (hour < 20) { name = timeNames[9]; }
+        else if (hour < 21) { name = timeNames[10]; }
+        else { name = timeNames[11]; }
+    }
+    else if (month == 7) {
+        if (hour == 0) { name = timeNames[1]; }
+        else if (hour < 6) { name = timeNames[2]; }
+        else if (hour < 7) { name = timeNames[3]; }
+        else if (hour < 8) { name = timeNames[4]; }
+        else if (hour < 12) { name = timeNames[5]; }
+        else if (hour < 13) { name = timeNames[6]; }
+        else if (hour < 17) { name = timeNames[7]; }
+        else if (hour < 19) { name = timeNames[8]; }
+        else if (hour < 20) { name = timeNames[9]; }
+        else if (hour < 21) { name = timeNames[10]; }
+        else { name = timeNames[11]; }
+    }
+    else if (month == 8) {
+        if (hour == 0) { name = timeNames[1]; }
+        else if (hour < 7) { name = timeNames[2]; }
+        else if (hour < 8) { name = timeNames[3]; }
+        else if (hour < 9) { name = timeNames[4]; }
+        else if (hour < 12) { name = timeNames[5]; }
+        else if (hour < 13) { name = timeNames[6]; }
+        else if (hour < 16) { name = timeNames[7]; }
+        else if (hour < 18) { name = timeNames[8]; }
+        else if (hour < 19) { name = timeNames[9]; }
+        else if (hour < 20) { name = timeNames[10]; }
+        else { name = timeNames[11]; }
+    }
+    else if (month == 9) {
+        if (hour == 0) { name = timeNames[1]; }
+        else if (hour < 7) { name = timeNames[2]; }
+        else if (hour < 8) { name = timeNames[3]; }
+        else if (hour < 9) { name = timeNames[4]; }
+        else if (hour < 12) { name = timeNames[5]; }
+        else if (hour < 13) { name = timeNames[6]; }
+        else if (hour < 16) { name = timeNames[7]; }
+        else if (hour < 18) { name = timeNames[8]; }
+        else if (hour < 19) { name = timeNames[9]; }
+        else if (hour < 20) { name = timeNames[10]; }
+        else { name = timeNames[11]; }
+    }
+    else if (month == 10) {
+        if (hour == 0) { name = timeNames[1]; }
+        else if (hour < 8) { name = timeNames[2]; }
+        else if (hour < 9) { name = timeNames[3]; }
+        else if (hour < 10) { name = timeNames[4]; }
+        else if (hour < 12) { name = timeNames[5]; }
+        else if (hour < 13) { name = timeNames[6]; }
+        else if (hour < 15) { name = timeNames[7]; }
+        else if (hour < 17) { name = timeNames[8]; }
+        else if (hour < 18) { name = timeNames[9]; }
+        else if (hour < 19) { name = timeNames[10]; }
+        else { name = timeNames[11]; }
+    }
+    else if (month == 11) {
+        if (hour == 0) { name = timeNames[1]; }
+        else if (hour < 8) { name = timeNames[2]; }
+        else if (hour < 9) { name = timeNames[3]; }
+        else if (hour < 10) { name = timeNames[4]; }
+        else if (hour < 12) { name = timeNames[5]; }
+        else if (hour < 13) { name = timeNames[6]; }
+        else if (hour < 15) { name = timeNames[7]; }
+        else if (hour < 17) { name = timeNames[8]; }
+        else if (hour < 18) { name = timeNames[9]; }
+        else if (hour < 19) { name = timeNames[10]; }
+        else { name = timeNames[11]; }
+    }
+    else {
+        if (hour == 0) { name = timeNames[1]; }
+        else if (hour < 9) { name = timeNames[2]; }
+        else if (hour < 10) { name = timeNames[3]; }
+        else if (hour < 11) { name = timeNames[4]; }
+        else if (hour < 12) { name = timeNames[5]; }
+        else if (hour < 13) { name = timeNames[6]; }
+        else if (hour < 14) { name = timeNames[7]; }
+        else if (hour < 16) { name = timeNames[8]; }
+        else if (hour < 17) { name = timeNames[9]; }
+        else if (hour < 18) { name = timeNames[10]; }
+        else { name = timeNames[11]; }
+    }
+
+    ui->leHourName->setText(name);
 }
 
 void MainWindow::on_pbRandMorn_clicked()
@@ -153,6 +321,7 @@ void MainWindow::on_pbRandMorn_clicked()
     ui->sbMin->setValue(0);
     ui->sbHour->setValue(hour);
     ui->sbDayHour->setValue(hour);
+    _setHourName();
 }
 
 void MainWindow::on_pbRandDay_clicked()
@@ -161,6 +330,7 @@ void MainWindow::on_pbRandDay_clicked()
     ui->sbMin->setValue(0);
     ui->sbDayHour->setValue(hour);
     ui->sbHour->setValue(hour - 12);
+    _setHourName();
 }
 
 void MainWindow::on_pbRandNight_clicked()
@@ -169,5 +339,11 @@ void MainWindow::on_pbRandNight_clicked()
     ui->sbMin->setValue(0);
     ui->sbDayHour->setValue(hour);
     ui->sbHour->setValue(hour - 12);
+    _setHourName();
 
+}
+
+void MainWindow::on_leHourName_returnPressed()
+{
+    _setHourName();
 }
