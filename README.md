@@ -2,6 +2,8 @@
 
 A utility used to track the passage of time in D&D games.
 
+![screenshot](https://github.com/erickveil/TimeTracker/blob/master/TimeTrackScreenshot.jpg)
+
 Rather than have sheets of checkboxes to tick off as time passes in my games,
 I will just run this application and click off the buttons.
 
